@@ -17,11 +17,11 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$PATH:$HOME/bin"
-fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$PATH:$HOME/.local/bin"
+fi
+if [ -d "$HOME/bin" ] ; then
+    PATH="$PATH:$HOME/bin"
 fi
 if [ -d "$HOME/bin/override" ] ; then
     PATH="$HOME/bin/override:$PATH"
@@ -38,5 +38,8 @@ export PATH=$SMARTEIFFEL/bin:$PATH:$ISE_EIFFEL/studio/spec/$ISE_PLATFORM/bin
 
 #stuff for Xcompose 
 export GTK_IM_MODULE="xim"
+
+#sudo
+export SUDO_EDITOR="gedit"
 
 
