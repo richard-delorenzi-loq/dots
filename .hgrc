@@ -4,3 +4,14 @@ username=richard.delorenzi
 [extensions]
 hgext.bookmarks =
 hgext.git = 
+churn = 
+color = 
+graphlog = 
+hgview = 
+progress = 
+rebase = 
+relink = 
+transplant = 
+
+[trusted]
+groups=vboxsf
