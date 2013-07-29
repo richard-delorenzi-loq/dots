@@ -42,4 +42,8 @@ export GTK_IM_MODULE="xim"
 #sudo
 export SUDO_EDITOR="gedit"
 
+#needed for sudo, when X11 over ssh
+export XAUTHORITY=~/.Xauthority
+
+
 
