@@ -5,13 +5,18 @@ username=richard.delorenzi
 hgext.bookmarks =
 hgext.git = 
 churn = 
-color = 
+color =
 graphlog = 
 hgview = 
-progress = 
+progress =
 rebase = 
 relink = 
 transplant = 
+convert = 
+extdiff = 
+hgk = 
+mq = 
+purge = 
 
 [trusted]
 groups=vboxsf
