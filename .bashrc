@@ -1,3 +1,5 @@
+
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -129,6 +131,16 @@ alias rmtil='rm *~'
 alias dirs="dirs -v"
 alias rotd="pushd +1 >/dev/null; dirs"
 alias popd="popd >/dev/null;dirs"
+alias pushd="pushd >/dev/null"
+
+#find
+function search
+{
+  dir=$1
+  shift
+  find $dir \( -iname .hg -o -iname obj -o -iname bin \) -prune -false -o $*
+}
+
 
 
 # Alias definitions.
