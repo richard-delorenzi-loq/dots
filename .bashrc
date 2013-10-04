@@ -122,7 +122,12 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-alias rmtil='rm *.~+([0-9])~'
+#tidy up
+alias rmtil='rm *~'
+
+#directory manipulation
+alias dirs="dirs -v"
+alias rotd="pushd +1 >/dev/null; dirs"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
